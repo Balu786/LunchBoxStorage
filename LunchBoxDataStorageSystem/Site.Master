@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="LunchBoxDataStorageSystem.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Menu.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="Scripts/jquery-1.4.1.min.js"></script>
+    <script src="Scripts/SiteMaster.js" type="text/javascript"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+
+            var userRole = <%= roleId %>
+            enableDisableMenu(userRole);
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <div style="float:left;">
+                     <img src="img/Logo.jpg" style="width:90px;height:90px;" alt="Logo"/>
+                </div>
+                <div>
+                <h1>
+                   <asp:Label ID="CompanyName" runat="server" Text="Company Name"/>
+                </h1>
+                </div>
+            </div>
+            <div class="loginDisplay">
+
+            <asp:Label runat="server" ID="lblUserName" /><br />
+            <asp:LinkButton runat="server" ID="linkLogout" Text="Logout" OnClick="logoutAction"> Logout</asp:LinkButton>
+            </div>
+            <div class="clear hideSkiplink">
+            <!-- Menu div-->
+            <div>
+                <ul>
+                    <li id="menuHome" ><a href="Home.aspx" >Home</a></li>
+                    <li id="menuPatent"><a href="Home.aspx" >Patent</a>
+                        <ul>
+                            <li><a href="Home.aspx" >New Patent</a></li>
+                            <li><a href="Home.aspx" >New Order</a></li>
+                        </ul>
+                    </li>
+
+                    <li id="menuOrders"><a href="Orders.aspx">Orders</a></li>
+                    <li id="menuTherapist">Therapist</li>
+                    <li id="menuAgents" >Agents</li>
+                    <li id="menuMySetup">MySetup</li>
+                    <li id="menuAdministration">Administration</li>
+                </ul>
+                 <!-- Menu div-->
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        <hr />
+        @copyright:2014
+    </div>
+    </form>
+</body>
+</html>
