@@ -58,7 +58,9 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="img\Logo.jpg" />
     <Content Include="Login.aspx" />
+    <Content Include="NewPatent.aspx" />
     <Content Include="Orders.aspx" />
+    <Content Include="Scripts\NewPatent.js" />
     <Content Include="Scripts\SiteMaster.js" />
     <Content Include="Styles\Menu.css" />
     <Content Include="Styles\Site.css" />
@@ -68,7 +70,9 @@
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="UserManagement.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -128,6 +132,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewPatent.aspx.cs">
+      <DependentUpon>NewPatent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewPatent.aspx.designer.cs">
+      <DependentUpon>NewPatent.aspx</DependentUpon>
     </Compile>
     <Compile Include="Orders.aspx.cs">
       <DependentUpon>Orders.aspx</DependentUpon>

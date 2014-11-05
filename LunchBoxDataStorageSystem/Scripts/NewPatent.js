@@ -1,0 +1,3 @@
+﻿function validatePatentInfo() {
+    //alert("........");
+}
