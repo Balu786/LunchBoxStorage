@@ -59,6 +59,7 @@
     <Content Include="img\Logo.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="NewPatent.aspx" />
+    <Content Include="NewTherapist.aspx" />
     <Content Include="Orders.aspx" />
     <Content Include="Scripts\NewPatent.js" />
     <Content Include="Scripts\SiteMaster.js" />
@@ -140,6 +141,13 @@
     <Compile Include="NewPatent.aspx.designer.cs">
       <DependentUpon>NewPatent.aspx</DependentUpon>
     </Compile>
+    <Compile Include="NewTherapist.aspx.cs">
+      <DependentUpon>NewTherapist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewTherapist.aspx.designer.cs">
+      <DependentUpon>NewTherapist.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Orders.aspx.cs">
       <DependentUpon>Orders.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -178,7 +186,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>7700</DevelopmentServerPort>
+          <DevelopmentServerPort>1133</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
