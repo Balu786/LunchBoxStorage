@@ -59,8 +59,8 @@
     <Content Include="img\Logo.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="NewPatent.aspx" />
-    <Content Include="NewTherapist.aspx" />
     <Content Include="Orders.aspx" />
+    <Content Include="Physician.aspx" />
     <Content Include="Scripts\NewPatent.js" />
     <Content Include="Scripts\SiteMaster.js" />
     <Content Include="Styles\Menu.css" />
@@ -70,6 +70,7 @@
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Therphist.aspx" />
     <Content Include="UserManagement.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -80,6 +81,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="HealthAgency.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -141,19 +143,19 @@
     <Compile Include="NewPatent.aspx.designer.cs">
       <DependentUpon>NewPatent.aspx</DependentUpon>
     </Compile>
-    <Compile Include="NewTherapist.aspx.cs">
-      <DependentUpon>NewTherapist.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="NewTherapist.aspx.designer.cs">
-      <DependentUpon>NewTherapist.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Orders.aspx.cs">
       <DependentUpon>Orders.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Orders.aspx.designer.cs">
       <DependentUpon>Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Physician.aspx.cs">
+      <DependentUpon>Physician.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Physician.aspx.designer.cs">
+      <DependentUpon>Physician.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -163,12 +165,26 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="Therphist.aspx.cs">
+      <DependentUpon>Therphist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Therphist.aspx.designer.cs">
+      <DependentUpon>Therphist.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserManagement.aspx.cs">
       <DependentUpon>UserManagement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserManagement.aspx.designer.cs">
       <DependentUpon>UserManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HealthAgency.aspx.cs">
+      <DependentUpon>HealthAgency.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HealthAgency.aspx.designer.cs">
+      <DependentUpon>HealthAgency.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -186,7 +202,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>1133</DevelopmentServerPort>
+          <DevelopmentServerPort>7700</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

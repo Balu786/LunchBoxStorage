@@ -49,12 +49,27 @@ namespace LunchBoxDataStorageSystem
             String dob = calDOB.SelectedDate.ToShortDateString();
             
             SqlConnection connection = new SqlConnection(connectionString);
-            String query = "INSERT INTO PATENT VALUES('" + txtPatentName.Text.Trim() + "','" + txtPatentPhone.Text.Trim() + "','" + txtPtntAltPhne.Text.Trim() + "','" + dob + "','" + txtSSN.Text.Trim() + "','" + txtMedicareNo.Text.Trim() + "','" + txtMedicalId.Text.Trim() + "','" + txtInsurance.Text.Trim() + "'," + selectedTherapist + "," + selectedPhysician + "," + selectedHealthAgency + ",'" + txtMedicalNecessity.Text.Trim() + "'," + Session["userId"].ToString() + ",'" + today + "',null,'')";
-
+          //  String query = "INSERT INTO PATENT VALUES('" + txtPatentName.Text.Trim() + "','" + txtPatentPhone.Text.Trim() + "','" + txtPtntAltPhne.Text.Trim() + "','" + dob + "','" + txtSSN.Text.Trim() + "','" + txtMedicareNo.Text.Trim() + "','" + txtMedicalId.Text.Trim() + "','" + txtInsurance.Text.Trim() + "','" + selectedTherapist + "','" + selectedPhysician + "','" + selectedHealthAgency + "','" + txtMedicalNecessity.Text.Trim() + "'," + Session["userId"].ToString() + ",'" + today + "',null,'')";
+//            @Name ,@PatPhno,@Pataltphno ,
+//@patDob,@ssn ,@Patmadicarno,@patmadicalid ,
+//@patInsurenceno ,@selctheriplist ,@selectphysian ,
+//@selecthealthagency ,@medicalnesacity,@curentdate
             //String query = "INSERT INTO PATENT VALUES('tam negun','23147890','','11/04/2014','7893458945','testme','789009','bharati',1,null,null,'comments',3,'11/04/2014',null,'')";
-            SqlCommand command= new SqlCommand(query,connection);
+            SqlCommand cmd= new SqlCommand("Usp_patent",connection);
             connection.Open();
-            command.ExecuteNonQuery();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Name",txtPatentName.Text);
+                 
+             cmd.Parameters.AddWithValue("@PatPhno",txtPatentPhone.Text);
+             cmd.Parameters.AddWithValue("@Pataltphno",txtPtntAltPhne.Text);
+             cmd.Parameters.AddWithValue("@patDob",calDOB.SelectedDate.ToShortDateString());
+             cmd.Parameters.AddWithValue("@ssn",txtSSN.Text);
+             cmd.Parameters.AddWithValue("@Patmadicarno",txtMedicareNo.Text);
+             cmd.Parameters.AddWithValue("@patmadicalid",txtMedicalId.Text);
+             cmd.Parameters.AddWithValue("@patInsurenceno",txtInsurance.Text);
+             cmd.Parameters.AddWithValue("@medicalnesacity",txtMedicalNecessity.Text);
+             cmd.Parameters.AddWithValue("@curentdate",DateTime.Now);
+            cmd.ExecuteNonQuery();
 
             
 
