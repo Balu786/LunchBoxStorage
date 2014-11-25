@@ -1,4 +1,5 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="LunchBoxDataStorageSystem.SiteMaster" %>
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="LunchBoxDataStorageSystem.SiteMaster" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
@@ -47,17 +48,25 @@
                         <ul>
                             <a href="NewPatent.aspx"><li>New Patent</li></a>
                             <a href="Home.aspx" ><li>New Order</li></a>
+                            <a href="PatientList.aspx" ><li>Patirnt List</li></a>
                         </ul>
                     </li>
 
-                    <a href="Orders.aspx"><li id="menuOrders">Orders</li></a>
+                    <a href="Orders.aspx"><li id="menuOrders">Orders
+                    <ul>
+                    <a href="OrderForm.aspx" ><li>New OrderForm</li></a>
+                    <a href="Test1.aspx" ><li>Orders List</li></a>
+                    </ul>
+                    
+                    </li></a>
                     <li id="menuTherapist">Therapist</li>
                     <li id="menuAgents" >Agents
                     <ul>
                     <a href="HealthAgency.aspx"><li>HealthAgency</li></a>
                      <a href="Physician.aspx" ><li>Physician</li></a>
                       <a href=" Therphist.aspx" ><li>Therphist</li></a>
-                    
+                     
+   
                     </ul>
                     </li>
                     <li id="menuMySetup">MySetup</li>

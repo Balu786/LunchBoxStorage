@@ -56,10 +56,14 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="img\calendar.png" />
     <Content Include="img\Logo.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="NewPatent.aspx" />
+    <Content Include="OrderForm.aspx" />
     <Content Include="Orders.aspx" />
+    <Content Include="OrdersList.aspx" />
+    <Content Include="PatientList.aspx" />
     <Content Include="Physician.aspx" />
     <Content Include="Scripts\NewPatent.js" />
     <Content Include="Scripts\SiteMaster.js" />
@@ -70,8 +74,8 @@
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Test1.aspx" />
     <Content Include="Therphist.aspx" />
-    <Content Include="UserManagement.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -82,6 +86,8 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="HealthAgency.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -143,12 +149,33 @@
     <Compile Include="NewPatent.aspx.designer.cs">
       <DependentUpon>NewPatent.aspx</DependentUpon>
     </Compile>
+    <Compile Include="OrderForm.aspx.cs">
+      <DependentUpon>OrderForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderForm.aspx.designer.cs">
+      <DependentUpon>OrderForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Orders.aspx.cs">
       <DependentUpon>Orders.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Orders.aspx.designer.cs">
       <DependentUpon>Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersList.aspx.cs">
+      <DependentUpon>OrdersList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdersList.aspx.designer.cs">
+      <DependentUpon>OrdersList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PatientList.aspx.cs">
+      <DependentUpon>PatientList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PatientList.aspx.designer.cs">
+      <DependentUpon>PatientList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Physician.aspx.cs">
       <DependentUpon>Physician.aspx</DependentUpon>
@@ -165,6 +192,13 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="Test1.aspx.cs">
+      <DependentUpon>Test1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test1.aspx.designer.cs">
+      <DependentUpon>Test1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Therphist.aspx.cs">
       <DependentUpon>Therphist.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -172,19 +206,26 @@
     <Compile Include="Therphist.aspx.designer.cs">
       <DependentUpon>Therphist.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserManagement.aspx.cs">
-      <DependentUpon>UserManagement.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserManagement.aspx.designer.cs">
-      <DependentUpon>UserManagement.aspx</DependentUpon>
-    </Compile>
     <Compile Include="HealthAgency.aspx.cs">
       <DependentUpon>HealthAgency.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="HealthAgency.aspx.designer.cs">
       <DependentUpon>HealthAgency.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
